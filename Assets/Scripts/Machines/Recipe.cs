@@ -22,7 +22,6 @@ public class Recipe : MonoBehaviour
 
         foreach (var input in inputs)
         {
-            Debug.Log("dupa dupsko");
             var item = Instantiate(emptyGameObject, transform);
             Image itemImage = item.AddComponent<Image>();
             itemImage.sprite = items[(int)input-1].ItemImage.sprite;
@@ -35,7 +34,7 @@ public class Recipe : MonoBehaviour
         outputImage.preserveAspect = true;
         outputItem.transform.SetParent(itemsObj.transform);
 
-        timeTxt.text = "Time: " + time.ToString();
+        timeTxt.text = "Time: " + time.ToString() + "s";
         successTxt.text = "Success: " + (success*100).ToString() + "%";
 
     }
