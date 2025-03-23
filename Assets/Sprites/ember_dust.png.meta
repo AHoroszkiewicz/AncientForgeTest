@@ -1,0 +1,1391 @@
+fileFormatVersion: 2
+guid: 02518cd92b7f90f4db44899b518560f7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1826325255024969066
+    second: ember_dust_0
+  - first:
+      213: -3816603601921656269
+    second: ember_dust_1
+  - first:
+      213: -382284141365036698
+    second: ember_dust_2
+  - first:
+      213: -6954713222512072371
+    second: ember_dust_3
+  - first:
+      213: 6476904827289585458
+    second: ember_dust_4
+  - first:
+      213: 870920487883680000
+    second: ember_dust_5
+  - first:
+      213: 8916448234065839954
+    second: ember_dust_6
+  - first:
+      213: -4522544062298532614
+    second: ember_dust_7
+  - first:
+      213: 8880927518218236319
+    second: ember_dust_8
+  - first:
+      213: -1258743979230164172
+    second: ember_dust_9
+  - first:
+      213: -3157163517892597308
+    second: ember_dust_10
+  - first:
+      213: -4028143420742589433
+    second: ember_dust_11
+  - first:
+      213: 9130919609108385025
+    second: ember_dust_12
+  - first:
+      213: 4612373574755237434
+    second: ember_dust_13
+  - first:
+      213: 8271262570598726812
+    second: ember_dust_14
+  - first:
+      213: 4057203640014415661
+    second: ember_dust_15
+  - first:
+      213: 1117962168158706763
+    second: ember_dust_16
+  - first:
+      213: 4479876786616710573
+    second: ember_dust_17
+  - first:
+      213: -41946901157140166
+    second: ember_dust_18
+  - first:
+      213: 8142150814949787889
+    second: ember_dust_19
+  - first:
+      213: -7018516640169118432
+    second: ember_dust_20
+  - first:
+      213: -1131244418074085781
+    second: ember_dust_21
+  - first:
+      213: 4291535822004788822
+    second: ember_dust_22
+  - first:
+      213: 3583659870434674064
+    second: ember_dust_23
+  - first:
+      213: -4609347724249997051
+    second: ember_dust_24
+  - first:
+      213: -1647570173871697269
+    second: ember_dust_25
+  - first:
+      213: 1512379759998605899
+    second: ember_dust_26
+  - first:
+      213: -8758190017353093855
+    second: ember_dust_27
+  - first:
+      213: -8906881208845047842
+    second: ember_dust_28
+  - first:
+      213: -8416747078936629981
+    second: ember_dust_29
+  - first:
+      213: -5509171036107964497
+    second: ember_dust_30
+  - first:
+      213: -8320936487206683494
+    second: ember_dust_31
+  - first:
+      213: 2728310207703513085
+    second: ember_dust_32
+  - first:
+      213: 5381316017856740429
+    second: ember_dust_33
+  - first:
+      213: 1600323140880397239
+    second: ember_dust_34
+  - first:
+      213: -6650362563931765473
+    second: ember_dust_35
+  - first:
+      213: -4827938669844664593
+    second: ember_dust_36
+  - first:
+      213: -347017602746426913
+    second: ember_dust_37
+  - first:
+      213: -5761764980900432560
+    second: ember_dust_38
+  - first:
+      213: 2231289189344621294
+    second: ember_dust_39
+  - first:
+      213: 2970897258077575168
+    second: ember_dust_40
+  - first:
+      213: 6846117160115705457
+    second: ember_dust_41
+  - first:
+      213: -4325730650495642742
+    second: ember_dust_42
+  - first:
+      213: -7363702825770577916
+    second: ember_dust_43
+  - first:
+      213: 5442502278779103869
+    second: ember_dust_44
+  - first:
+      213: 638181744381755824
+    second: ember_dust_45
+  - first:
+      213: -5677788803770022912
+    second: ember_dust_46
+  - first:
+      213: 8991574121574319126
+    second: ember_dust_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ember_dust_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 368
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a658616a429685910800000000000000
+      internalID: 1826325255024969066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 982
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33abbface33b80bc0800000000000000
+      internalID: -3816603601921656269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_2
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1010
+        width: 330
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669fbae499ad1baf0800000000000000
+      internalID: -382284141365036698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_3
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 999
+        width: 105
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d49a479fb25eb7f90800000000000000
+      internalID: -6954713222512072371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_4
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 487
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237cb92df9692e950800000000000000
+      internalID: 6476904827289585458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_5
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 7
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 009aae3c191261c00800000000000000
+      internalID: 870920487883680000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_6
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 15
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25747a17d669dbb70800000000000000
+      internalID: 8916448234065839954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_7
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 3
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4d4a50322bc31c0800000000000000
+      internalID: -4522544062298532614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_8
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 6
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91b36f46846f3b70800000000000000
+      internalID: 8880927518218236319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_9
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 15
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b03de150b088ee0800000000000000
+      internalID: -1258743979230164172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_10
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 15
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c9603202808f24d0800000000000000
+      internalID: -3157163517892597308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_11
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 3
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704af4e96e82918c0800000000000000
+      internalID: -4028143420742589433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_12
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 4
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10dcd8db10b87be70800000000000000
+      internalID: 9130919609108385025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_13
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 4
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e3fae2451720040800000000000000
+      internalID: 4612373574755237434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_14
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 15
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c75842c7d69c270800000000000000
+      internalID: 8271262570598726812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_15
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 4
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d272b70f6351e4830800000000000000
+      internalID: 4057203640014415661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_16
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 4
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4cdc613bacc38f00800000000000000
+      internalID: 1117962168158706763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_17
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 3
+        width: 85
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5bec7b338bb2e30800000000000000
+      internalID: 4479876786616710573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_18
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 4
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39a9110489fa6ff0800000000000000
+      internalID: -41946901157140166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_19
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 15
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f84db8f60bbef070800000000000000
+      internalID: 8142150814949787889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_20
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 6
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0253d8c2d48399e90800000000000000
+      internalID: -7018516640169118432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_21
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 3
+        width: 115
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b66fc8202330d40f0800000000000000
+      internalID: -1131244418074085781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_22
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 15
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e9573b7199e8b30800000000000000
+      internalID: 4291535822004788822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_23
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 3
+        width: 52
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095c4154aa7bbb130800000000000000
+      internalID: 3583659870434674064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_24
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 3
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501e2d98aae4800c0800000000000000
+      internalID: -4609347724249997051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_25
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 15
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8259d3f7a7a229e0800000000000000
+      internalID: -1647570173871697269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_26
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 4
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a1538f06d0df410800000000000000
+      internalID: 1512379759998605899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_27
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 15
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12deb440598a47680800000000000000
+      internalID: -8758190017353093855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_28
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 7
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed760323bb6646480800000000000000
+      internalID: -8906881208845047842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_29
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 7
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32deca32025b13b80800000000000000
+      internalID: -8416747078936629981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_30
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 11
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faff9e9a12e7b83b0800000000000000
+      internalID: -5509171036107964497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_31
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 7
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c7571e958168c80800000000000000
+      internalID: -8320936487206683494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_32
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 15
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df77d3fbda7ecd520800000000000000
+      internalID: 2728310207703513085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_33
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 4
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c787428664eaa40800000000000000
+      internalID: 5381316017856740429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_34
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 15
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b37302fa6d753610800000000000000
+      internalID: 1600323140880397239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_35
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 4
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f158a45bb7a25b3a0800000000000000
+      internalID: -6650362563931765473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_36
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 15
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee698afb57bffcb0800000000000000
+      internalID: -4827938669844664593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_37
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 4
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9dd7134552f2bf0800000000000000
+      internalID: -347017602746426913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_38
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 15
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055f42ae6491a00b0800000000000000
+      internalID: -5761764980900432560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_39
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 7
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee23e0222b127fe10800000000000000
+      internalID: 2231289189344621294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_40
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 7
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00855e3d05fba3920800000000000000
+      internalID: 2970897258077575168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_41
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 10
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 176176be84b420f50800000000000000
+      internalID: 6846117160115705457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_42
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 7
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83103f54eae7f3c0800000000000000
+      internalID: -4325730650495642742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_43
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 15
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40097666b4fdec990800000000000000
+      internalID: -7363702825770577916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_44
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 6
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ae1e7acf6a78b40800000000000000
+      internalID: 5442502278779103869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_45
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 15
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b183005ae64bd800800000000000000
+      internalID: 638181744381755824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_46
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 3
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00409994a217431b0800000000000000
+      internalID: -5677788803770022912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ember_dust_47
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 4
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6144800360d78cc70800000000000000
+      internalID: 8991574121574319126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ember_dust_0: 1826325255024969066
+      ember_dust_1: -3816603601921656269
+      ember_dust_10: -3157163517892597308
+      ember_dust_11: -4028143420742589433
+      ember_dust_12: 9130919609108385025
+      ember_dust_13: 4612373574755237434
+      ember_dust_14: 8271262570598726812
+      ember_dust_15: 4057203640014415661
+      ember_dust_16: 1117962168158706763
+      ember_dust_17: 4479876786616710573
+      ember_dust_18: -41946901157140166
+      ember_dust_19: 8142150814949787889
+      ember_dust_2: -382284141365036698
+      ember_dust_20: -7018516640169118432
+      ember_dust_21: -1131244418074085781
+      ember_dust_22: 4291535822004788822
+      ember_dust_23: 3583659870434674064
+      ember_dust_24: -4609347724249997051
+      ember_dust_25: -1647570173871697269
+      ember_dust_26: 1512379759998605899
+      ember_dust_27: -8758190017353093855
+      ember_dust_28: -8906881208845047842
+      ember_dust_29: -8416747078936629981
+      ember_dust_3: -6954713222512072371
+      ember_dust_30: -5509171036107964497
+      ember_dust_31: -8320936487206683494
+      ember_dust_32: 2728310207703513085
+      ember_dust_33: 5381316017856740429
+      ember_dust_34: 1600323140880397239
+      ember_dust_35: -6650362563931765473
+      ember_dust_36: -4827938669844664593
+      ember_dust_37: -347017602746426913
+      ember_dust_38: -5761764980900432560
+      ember_dust_39: 2231289189344621294
+      ember_dust_4: 6476904827289585458
+      ember_dust_40: 2970897258077575168
+      ember_dust_41: 6846117160115705457
+      ember_dust_42: -4325730650495642742
+      ember_dust_43: -7363702825770577916
+      ember_dust_44: 5442502278779103869
+      ember_dust_45: 638181744381755824
+      ember_dust_46: -5677788803770022912
+      ember_dust_47: 8991574121574319126
+      ember_dust_5: 870920487883680000
+      ember_dust_6: 8916448234065839954
+      ember_dust_7: -4522544062298532614
+      ember_dust_8: 8880927518218236319
+      ember_dust_9: -1258743979230164172
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
