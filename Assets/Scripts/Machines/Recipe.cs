@@ -1,15 +1,10 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
 public class Recipe : MonoBehaviour
 {
-    private List<ItemsEnum> inputs = new List<ItemsEnum>();
-    private ItemsEnum output;
-
     [SerializeField] private GameObject itemsObj;
     [SerializeField] private GameObject inputObj;
     [SerializeField] private TextMeshProUGUI timeTxt;
@@ -17,14 +12,25 @@ public class Recipe : MonoBehaviour
     [SerializeField] private GameObject emptyGameObject;
     [SerializeField] private Image image;
 
+    private List<ItemsEnum> inputs = new List<ItemsEnum>();
+    private ItemsEnum output;
+    private float time;
+    private float successRate;
     private MachinePanel machinePanel;
 
-    public void Initialize(List<ItemsEnum> inputs, ItemsEnum output, float time, float success, InventoryManager inventoryManager, MachinePanel machinePanel)
+    public List<ItemsEnum> Inputs => inputs;
+    public ItemsEnum Output => output;
+    public float Time => time;
+    public float SuccessRate => successRate;
+
+    public void Initialize(RecipeSO recipeSO, InventoryManager inventoryManager, MachinePanel machinePanel)
     {
         List<Item> items = inventoryManager.Items;
         this.machinePanel = machinePanel;
-        this.inputs = inputs;
-        this.output = output;
+        inputs = recipeSO.Input;
+        output = recipeSO.Output;
+        time = recipeSO.Time;
+        successRate = recipeSO.SuccessRate;
 
         foreach (var input in inputs)
         {
@@ -41,12 +47,12 @@ public class Recipe : MonoBehaviour
         outputItem.transform.SetParent(itemsObj.transform);
 
         timeTxt.text = "Time: " + time.ToString() + "s";
-        successTxt.text = "Success: " + (success*100).ToString() + "%";
+        successTxt.text = "Success: " + (successRate * 100).ToString() + "%";
     }
 
     public void SelectCrafting()
     {
-        machinePanel.SelectCrafting(inputs, output, this);
+        machinePanel.SelectCrafting(this);
     }
 
     public void SelectImage(bool select)
