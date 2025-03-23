@@ -1,19 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MachinePanelController : MonoBehaviour
+public class MachinePanelManager : MonoBehaviour
 {
-
     [SerializeField] private List<MachinePanel> machinePanels = new List<MachinePanel>();
 
-    private InventoryManager inventoryManager;
+    private GameManager gameManager;
 
-    public void Initialize(InventoryManager inventoryManager)
+    public GameManager GameManager => gameManager;
+
+    public void Initialize(GameManager gameManager)
     {
-        this.inventoryManager = inventoryManager;
+        this.gameManager = gameManager;
         foreach (MachinePanel machinePanel in machinePanels)
         {
-            machinePanel.Initialize(this.inventoryManager);
+            machinePanel.Initialize(this);
         }
     }
 
@@ -30,5 +31,10 @@ public class MachinePanelController : MonoBehaviour
                 machinePanels[i].gameObject.SetActive(false);
             }
         }
+    }
+
+    public void UnlockPanel(int id)
+    {
+        machinePanels[id].Unlock();
     }
 }

@@ -14,7 +14,7 @@ public class Item : MonoBehaviour
     [SerializeField] private Image itemImage;
     [SerializeField] private TextMeshProUGUI quantityText;
 
-    public int ID => id;
+    public int Id => id;
     public string ItemName => itemName;
     public ItemTypeEnum Type => type;
     public string Description => description;

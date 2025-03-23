@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,11 +7,15 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] ItemListSO itemList;
     [SerializeField] GameObject itemPrefab;
     [SerializeField] private List<Item> items;
+    [SerializeField] private float idleResourceTime = 5f;
+
+    private GameManager gameManager;
 
     public List<Item> Items => items;
 
-    public void Initialize()
+    public void Initialize(GameManager gameManager)
     {
+        this.gameManager = gameManager;
         InitInventory();
     }
 
@@ -42,15 +47,38 @@ public class InventoryManager : MonoBehaviour
                     break;
             }
         }
+        StartCoroutine(IdleResources());
     }
 
     public void AddItem(int id, int value)
     {
+        gameManager.CharacterManager.QuestManager.CheckQuests((ItemsEnum)id);
         items[id - 1].UpdateQuantity(value);
     }
 
     public void RemoveItem(int id, int value)
     {
         items[id - 1].UpdateQuantity(-value);
+    }
+
+    private IEnumerator IdleResources()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(idleResourceTime);
+            int randomItem = Random.Range(1, 6);
+            AddItem(randomItem, 1);
+        }
+    }
+
+    public void Cheat()
+    {
+        foreach (Item item in items)
+        {
+            if (item.Type == ItemTypeEnum.Resource)
+            {
+                AddItem(item.Id, 100);
+            }
+        }
     }
 }

@@ -1,29 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MachinePanel : MonoBehaviour
 {
     [SerializeField] private GameObject recipesObj;
     [SerializeField] private GameObject recipePrefab;
     [SerializeField] private List<RecipeSO> recipesSO = new List<RecipeSO>();
+    [SerializeField] private Button button;
+    [SerializeField] private Machine machine;
 
     private List<Recipe> recipes = new List<Recipe>();
-    private Queue<Recipe> craftingQueue = new Queue<Recipe>();
     private Recipe selectedRecipe;
-    private bool isCrafting = false;
     private InventoryManager inventoryManager;
+    private MachinePanelManager machinePanelManager;
 
-    public void Initialize(InventoryManager inventoryManager)
+    public MachinePanelManager MachinePanelManager => machinePanelManager;
+
+    public void Initialize(MachinePanelManager machinePanelManager)
     {
-        this.inventoryManager = inventoryManager;
+        this.machinePanelManager = machinePanelManager;
+        inventoryManager = machinePanelManager.GameManager.InventoryManager;
+        machine.Initialize(this);
 
         foreach (var recipe in recipesSO)
         {
             var recipeObj = Instantiate(recipePrefab, recipesObj.transform);
             recipeObj.transform.SetParent(recipesObj.transform);
             Recipe recipeComp = recipeObj.GetComponent<Recipe>();
-            recipeComp.Initialize(recipe, this.inventoryManager, this);
+            recipeComp.Initialize(recipe, inventoryManager, this);
             recipes.Add(recipeComp);
         }
     }
@@ -68,29 +74,11 @@ public class MachinePanel : MonoBehaviour
         {
             inventoryManager.RemoveItem((int)item, 1);
         }
-        craftingQueue.Enqueue(selectedRecipe);
-        if (!isCrafting)
-        {
-            isCrafting = true;
-            StartCoroutine(Crafting());
-        }
+        machine.Craft(selectedRecipe);
     }
 
-    private IEnumerator Crafting()
+    public void Unlock()
     {
-        while (craftingQueue.Count > 0)
-        {
-            var recipe = craftingQueue.Peek();
-            yield return new WaitForSeconds(recipe.Time);
-            if (Random.Range(0, 1) < recipe.SuccessRate)
-            {
-                inventoryManager.AddItem((int)craftingQueue.Dequeue().Output, 1);
-            }
-            else
-            {
-                Debug.Log("Crafting failed"); //TODO
-            }
-        }
-        isCrafting = false;
+        button.interactable = true;
     }
 }
