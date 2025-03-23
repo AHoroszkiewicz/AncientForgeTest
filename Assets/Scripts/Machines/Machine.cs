@@ -29,7 +29,8 @@ public class Machine : MonoBehaviour
         {
             var recipe = craftingQueue.Peek();
             yield return new WaitForSeconds(recipe.Time);
-            if (Random.Range(0, 1) < recipe.SuccessRate)
+            float random = Random.Range(0f, 1f);
+            if (random < recipe.SuccessRate)
             {
                 machinePanel.MachinePanelManager.GameManager.InventoryManager.AddItem((int)craftingQueue.Dequeue().Output, 1);
             }
