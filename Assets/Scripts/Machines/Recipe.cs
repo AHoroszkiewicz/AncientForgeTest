@@ -15,10 +15,16 @@ public class Recipe : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timeTxt;
     [SerializeField] private TextMeshProUGUI successTxt;
     [SerializeField] private GameObject emptyGameObject;
+    [SerializeField] private Image image;
 
-    public void SetRecipe(List<ItemsEnum> inputs, ItemsEnum output, float time, float success)
+    private MachinePanel machinePanel;
+
+    public void Initialize(List<ItemsEnum> inputs, ItemsEnum output, float time, float success, InventoryManager inventoryManager, MachinePanel machinePanel)
     {
-        List<Item> items = InventoryManager.Instance.Items;
+        List<Item> items = inventoryManager.Items;
+        this.machinePanel = machinePanel;
+        this.inputs = inputs;
+        this.output = output;
 
         foreach (var input in inputs)
         {
@@ -36,6 +42,15 @@ public class Recipe : MonoBehaviour
 
         timeTxt.text = "Time: " + time.ToString() + "s";
         successTxt.text = "Success: " + (success*100).ToString() + "%";
+    }
 
+    public void SelectCrafting()
+    {
+        machinePanel.SelectCrafting(inputs, output, this);
+    }
+
+    public void SelectImage(bool select)
+    {
+        image.color = select ? new Color(0.2154236f, 0.6544291f, 0.9716981f, 0.5f) : new Color(0f,0f,0f,0f);
     }
 }

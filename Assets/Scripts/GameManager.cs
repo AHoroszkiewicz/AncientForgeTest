@@ -5,14 +5,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private InventoryManager inventoryManager;
-    [SerializeField] private List<MachinePanel> machinePanels = new List<MachinePanel>();
+    [SerializeField] private MachinePanelController machinePanelController;
 
     void Start()
     {
         inventoryManager.Initialize();
-        foreach (MachinePanel machinePanel in machinePanels)
-        {
-            machinePanel.Initialize();
-        }
+        machinePanelController.Initialize(inventoryManager);
     }
 }

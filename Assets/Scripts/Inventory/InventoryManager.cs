@@ -8,11 +8,9 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private List<Item> items;
 
     public List<Item> Items => items;
-    public static InventoryManager Instance;
 
     public void Initialize()
     {
-        Instance = this;
         InitInventory();
     }
 
@@ -46,8 +44,13 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public void AddItem(int id, int quantity)
+    public void AddItem(int id, int value)
     {
-        items[id - 1].UpdateQuantity(quantity);
+        items[id - 1].UpdateQuantity(value);
+    }
+
+    internal void RemoveItem(int id, int value)
+    {
+        items[id - 1].UpdateQuantity(-value);
     }
 }

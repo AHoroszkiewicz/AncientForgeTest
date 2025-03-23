@@ -2,7 +2,7 @@ using UnityEngine;
 
 public enum ItemsEnum
 {
-    none = 0,
+    None = 0,
     IronOre = 1,
     GoldOre = 2,
     FireShard = 3,

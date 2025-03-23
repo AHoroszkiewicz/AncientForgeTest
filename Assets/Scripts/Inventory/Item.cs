@@ -40,6 +40,10 @@ public class Item : MonoBehaviour
     public void UpdateQuantity(int value)
     {
         quantity += value;
+        if (quantity < 0)
+        {
+            quantity = 0;
+        }
         quantityText.text = quantity.ToString();
     }
 }

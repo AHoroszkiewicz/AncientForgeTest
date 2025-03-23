@@ -3,7 +3,19 @@ using UnityEngine;
 
 public class MachinePanelController : MonoBehaviour
 {
+
     [SerializeField] private List<MachinePanel> machinePanels = new List<MachinePanel>();
+
+    private InventoryManager inventoryManager;
+
+    public void Initialize(InventoryManager inventoryManager)
+    {
+        this.inventoryManager = inventoryManager;
+        foreach (MachinePanel machinePanel in machinePanels)
+        {
+            machinePanel.Initialize(this.inventoryManager);
+        }
+    }
 
     public void ShowPanel(int id)
     {

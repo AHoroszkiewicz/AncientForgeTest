@@ -600,6 +600,7 @@ MonoBehaviour:
   timeTxt: {fileID: 1644787246402195885}
   successTxt: {fileID: 1304821790758162111}
   emptyGameObject: {fileID: 954194465568358242, guid: ab203758ab5ee25409f0fc3e4eb581d4, type: 3}
+  image: {fileID: 5564378278792075661}
 --- !u!114 &5564378278792075661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,7 +614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -649,7 +650,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.21542363, g: 0.65442914, b: 0.9716981, a: 0.5019608}
@@ -673,7 +674,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5564378278792075661}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2738774998152313714}
+        m_TargetAssemblyTypeName: Recipe, Assembly-CSharp
+        m_MethodName: SelectCrafting
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1957571691027882951
 CanvasRenderer:
   m_ObjectHideFlags: 0
