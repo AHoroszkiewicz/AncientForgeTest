@@ -20,11 +20,20 @@ public class QuestManager : MonoBehaviour
 
     public void CheckQuests(ItemsEnum item)
     {
-        foreach (Quest quest in quests)
+        int completedQuests = 0;
+        for (int i = 0; i < quests.Count; i++)
         {
-            if (quest.Item == item && !quest.IsCompleted)
+            if (quests[i].Item == item && !quests[i].IsCompleted)
             {
-                quest.StepQuest();
+                quests[i].StepQuest();
+            }
+            if (quests[i].IsCompleted)
+            {
+                completedQuests++;
+                if (completedQuests == quests.Count)
+                {
+                    characterManager.GameManager.CharacterManager.BonusManager.ApplyAll();
+                }
             }
         }
     }
