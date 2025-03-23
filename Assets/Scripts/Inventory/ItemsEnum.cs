@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public enum ItemsEnum
 {
     None = 0,

@@ -49,7 +49,7 @@ public class InventoryManager : MonoBehaviour
         items[id - 1].UpdateQuantity(value);
     }
 
-    internal void RemoveItem(int id, int value)
+    public void RemoveItem(int id, int value)
     {
         items[id - 1].UpdateQuantity(-value);
     }
