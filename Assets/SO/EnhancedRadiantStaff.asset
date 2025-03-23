@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423c5adb35ab75045bd22f46c47cf5f7, type: 3}
+  m_Name: EnhancedRadiantStaff
+  m_EditorClassIdentifier: 
+  itemName: Enhanced Radiant Staff
+  itemType: 1
+  itemDescription: Runic variant of the Radiant Staff with improved magical power
+  itemSprite: {fileID: 21300000, guid: fa195ad46b57a4340a1a09c243ce6a14, type: 3}
