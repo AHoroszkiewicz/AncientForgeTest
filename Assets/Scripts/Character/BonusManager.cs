@@ -31,4 +31,9 @@ public class BonusManager : MonoBehaviour
             bonus.ApplyBonus();
         }
     }
+
+    public Bonus GetBonus(BonusEnum bonusType)
+    {
+        return bonuses.Find(b => b.BonusType == bonusType);
+    }
 }

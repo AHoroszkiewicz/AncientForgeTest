@@ -1548,7 +1548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bonuses:
-  - {fileID: 4650494068682815061}
+  - {fileID: 4650494068682815063}
   - {fileID: 1531016565}
   chanceToApplyBonus: 0.25
 --- !u!1001 &1221149355
@@ -2413,6 +2413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeAmulet
       objectReference: {fileID: 0}
+    - target: {fileID: 8863361257098013298, guid: 6f59cc9b749d3d04a90e48140d7dbf7f, type: 3}
+      propertyPath: bonusSO
+      value: 
+      objectReference: {fileID: 11400000, guid: c47cfbd268148c44293746a418914be2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3410,6 +3414,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LuckyCharm
       objectReference: {fileID: 0}
+    - target: {fileID: 8863361257098013298, guid: 6f59cc9b749d3d04a90e48140d7dbf7f, type: 3}
+      propertyPath: bonusSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 360dce1e31364fc4baaed9229efda093, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3420,7 +3428,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7081820797407398027, guid: 6f59cc9b749d3d04a90e48140d7dbf7f, type: 3}
   m_PrefabInstance: {fileID: 4650494068682815059}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4650494068682815061 stripped
+--- !u!114 &4650494068682815063 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8863361257098013298, guid: 6f59cc9b749d3d04a90e48140d7dbf7f, type: 3}
   m_PrefabInstance: {fileID: 4650494068682815059}

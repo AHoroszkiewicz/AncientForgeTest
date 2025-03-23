@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Machine : MonoBehaviour
 {
+    [SerializeField] private float defaultTimeBonus = 0f;
+    [SerializeField] private float defaultSuccessBonus = 1f;
+
     private Queue<Recipe> craftingQueue = new Queue<Recipe>();
     private bool isCrafting = false;
     private MachinePanel machinePanel;
@@ -28,9 +31,13 @@ public class Machine : MonoBehaviour
         while (craftingQueue.Count > 0)
         {
             var recipe = craftingQueue.Peek();
-            yield return new WaitForSeconds(recipe.Time);
+            float time = recipe.Time - TimeBonus();
+            if (time <= 0 ) 
+                time = 0.1f;
+            yield return new WaitForSeconds(time);
             float random = Random.Range(0f, 1f);
-            if (random < recipe.SuccessRate)
+            float success = recipe.SuccessRate * SuccessBonus();
+            if (random < success)
             {
                 machinePanel.MachinePanelManager.GameManager.InventoryManager.AddItem((int)craftingQueue.Dequeue().Output, 1);
             }
@@ -40,5 +47,26 @@ public class Machine : MonoBehaviour
             }
         }
         isCrafting = false;
+    }
+
+    private float TimeBonus()
+    {
+        Bonus bonus = machinePanel.MachinePanelManager.GameManager.CharacterManager.BonusManager.GetBonus(BonusEnum.TimeAmulet);
+        if (bonus != null && bonus.IsApplied)
+        {
+            return bonus.Value;
+        }
+
+        return defaultTimeBonus;
+    }
+
+    private float SuccessBonus()
+    {
+        Bonus bonus = machinePanel.MachinePanelManager.GameManager.CharacterManager.BonusManager.GetBonus(BonusEnum.LuckyCharm);
+        if (bonus != null && bonus.IsApplied)
+        {
+            return bonus.Value;
+        }
+        return defaultSuccessBonus;
     }
 }
