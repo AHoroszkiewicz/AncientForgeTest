@@ -7,8 +7,12 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] GameObject itemPrefab;
     [SerializeField] private List<Item> items;
 
-    private void Start()
+    public List<Item> Items => items;
+    public static InventoryManager Instance;
+
+    public void Initialize()
     {
+        Instance = this;
         InitInventory();
     }
 

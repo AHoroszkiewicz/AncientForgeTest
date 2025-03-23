@@ -14,6 +14,13 @@ public class Item : MonoBehaviour
     [SerializeField] private Image itemImage;
     [SerializeField] private TextMeshProUGUI quantityText;
 
+    public int ID => id;
+    public string ItemName => itemName;
+    public ItemTypeEnum Type => type;
+    public string Description => description;
+    public int Quantity => quantity;
+    public Image ItemImage => itemImage;
+
     public void Init(int id, string itemName, ItemTypeEnum itemType, string desc, Sprite sprite, int quantity = 0)
     {
         this.id = id;
