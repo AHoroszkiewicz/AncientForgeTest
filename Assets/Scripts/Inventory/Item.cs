@@ -44,6 +44,10 @@ public class Item : MonoBehaviour
         {
             quantity = 0;
         }
+        if (quantity > 999)
+        {
+            quantity = 999;
+        }
         quantityText.text = quantity.ToString();
     }
 }

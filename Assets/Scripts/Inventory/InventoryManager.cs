@@ -77,7 +77,7 @@ public class InventoryManager : MonoBehaviour
         {
             if (item.Type == ItemTypeEnum.Resource)
             {
-                AddItem(item.Id, 100);
+                AddItem(item.Id, 10);
             }
         }
     }
