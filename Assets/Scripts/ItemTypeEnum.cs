@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public enum ItemType
+public enum ItemTypeEnum
 {
     Resource,
     Crafted
