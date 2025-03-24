@@ -599,7 +599,7 @@ MonoBehaviour:
   inputObj: {fileID: 8290105942673707376}
   timeTxt: {fileID: 1644787246402195885}
   successTxt: {fileID: 1304821790758162111}
-  emptyGameObject: {fileID: 954194465568358242, guid: ab203758ab5ee25409f0fc3e4eb581d4, type: 3}
+  emptyGameObject: {fileID: 1156475581852486589, guid: 80e039f6b3d5df747a32779a0f251ae3, type: 3}
   image: {fileID: 5564378278792075661}
 --- !u!114 &5564378278792075661
 MonoBehaviour:

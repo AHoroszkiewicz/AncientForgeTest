@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bonusType: 2
   value: 2
+  bonusName: Time Amulet
+  bonusDescription: Reduces crafting time by 2 seconds. Get lucky or finish quests
+    to unlock

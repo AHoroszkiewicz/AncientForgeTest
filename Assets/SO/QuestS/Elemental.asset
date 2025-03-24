@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Elemental
   m_EditorClassIdentifier: 
   questName: Elemental
-  questDescription: Craft 2 Ember Blades
+  questDescription: Craft 2 Ember Blades, unlocks Dragon Forge
   item: 10
   value: 2
   unlockedMachine: 5

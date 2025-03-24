@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bonusType: 1
   value: 1.1
+  bonusName: Lucky Charm
+  bonusDescription: Increases success rate by 10 precentage points. Get lucky or
+    finish quests to unlock
