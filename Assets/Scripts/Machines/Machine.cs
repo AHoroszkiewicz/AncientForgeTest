@@ -10,6 +10,10 @@ public class Machine : MonoBehaviour
     [SerializeField] private LoadingSprite loadingSprite;
     [SerializeField] private ParticleSystem successParticle;
     [SerializeField] private ParticleSystem failureParticle;
+    [SerializeField] private HoverDescription hoverDescription;
+    [SerializeField] private string machineName;
+    [SerializeField] private string machineDesc;
+
 
     private Queue<Recipe> craftingQueue = new Queue<Recipe>();
     private bool isCrafting = false;
@@ -18,6 +22,7 @@ public class Machine : MonoBehaviour
     public void Initialize(MachinePanel machinePanel)
     {
         this.machinePanel = machinePanel;
+        hoverDescription.Initialize(machineName, machineDesc);
     }
 
     public void Craft(Recipe recipe)

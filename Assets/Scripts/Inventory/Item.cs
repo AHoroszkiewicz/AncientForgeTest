@@ -7,6 +7,7 @@ public class Item : MonoBehaviour
     [SerializeField] private Image itemImage;
     [SerializeField] private TextMeshProUGUI quantityText;
     [SerializeField] private ItemSO itemSO;
+    [SerializeField] private HoverDescription hoverDescription;
 
     //Serialized Fields just for testing purposes
     [SerializeField] private ItemsEnum itemEnum;
@@ -29,6 +30,7 @@ public class Item : MonoBehaviour
         description = itemSO.ItemDescription;
         itemImage.sprite = itemSO.ItemSprite;
         itemEnum = itemSO.ItemEnum;
+        hoverDescription.Initialize(itemName, description);
     }
 
     public void SetQuantity(int value)

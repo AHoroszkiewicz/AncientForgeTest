@@ -6,6 +6,7 @@ public class Quest : MonoBehaviour
     [SerializeField] private QuestSO questSO;
     [SerializeField] private TextMeshProUGUI questNameTxt;
     [SerializeField] private ParticleSystem successParticle;
+    [SerializeField] private HoverDescription hoverDescription;
 
     private bool isCompleted;
     private string questName;
@@ -30,8 +31,8 @@ public class Quest : MonoBehaviour
         value = questSO.Value;
         unlockedMachine = questSO.UnlockedMachine;
         this.questManager = questManager;
-
         questNameTxt.text = questName;
+        hoverDescription.Initialize(questName, questDescription);
     }
 
     public void StepQuest()
