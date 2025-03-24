@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 423c5adb35ab75045bd22f46c47cf5f7, type: 3}
   m_Name: EmberBladeSO
   m_EditorClassIdentifier: 
+  itemEnum: 10
   itemName: Ember Blade
   itemType: 1
   itemDescription: Blazing sword created by fusing steel with Ember Dust

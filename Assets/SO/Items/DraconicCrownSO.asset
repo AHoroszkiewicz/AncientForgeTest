@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 423c5adb35ab75045bd22f46c47cf5f7, type: 3}
   m_Name: DraconicCrownSO
   m_EditorClassIdentifier: 
+  itemEnum: 15
   itemName: Draconic Crown
   itemType: 1
   itemDescription: Royal headpiece forged with Flame-Gold Ingot + Dragon Scale

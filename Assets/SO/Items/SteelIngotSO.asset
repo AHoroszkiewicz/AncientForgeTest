@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 423c5adb35ab75045bd22f46c47cf5f7, type: 3}
   m_Name: SteelIngotSO
   m_EditorClassIdentifier: 
+  itemEnum: 7
   itemName: Steel Ingot
   itemType: 1
   itemDescription: Stronger metal bar forged from Iron Ingot and Fire Shard

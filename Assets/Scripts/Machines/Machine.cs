@@ -8,6 +8,8 @@ public class Machine : MonoBehaviour
     [SerializeField] private float defaultTimeBonus = 0f;
     [SerializeField] private float defaultSuccessBonus = 1f;
     [SerializeField] private LoadingSprite loadingSprite;
+    [SerializeField] private ParticleSystem successParticle;
+    [SerializeField] private ParticleSystem failureParticle;
 
     private Queue<Recipe> craftingQueue = new Queue<Recipe>();
     private bool isCrafting = false;
@@ -42,11 +44,12 @@ public class Machine : MonoBehaviour
             float success = recipe.SuccessRate * SuccessBonus();
             if (random < success)
             {
-                machinePanel.MachinePanelManager.GameManager.InventoryManager.AddItem((int)craftingQueue.Dequeue().Output, 1);
+                successParticle.Play();
+                machinePanel.MachinePanelManager.GameManager.InventoryManager.AddItem(1, itemEnum: craftingQueue.Dequeue().Output);
             }
             else
             {
-                Debug.Log("Crafting failed"); //TODO
+                failureParticle.Play();
             }
         }
         isCrafting = false;

@@ -5,6 +5,7 @@ public class Quest : MonoBehaviour
 {
     [SerializeField] private QuestSO questSO;
     [SerializeField] private TextMeshProUGUI questNameTxt;
+    [SerializeField] private ParticleSystem successParticle;
 
     private bool isCompleted;
     private string questName;
@@ -47,5 +48,6 @@ public class Quest : MonoBehaviour
     {
         questNameTxt.color = Color.green;
         questManager.CharacterManager.GameManager.MachinePanelController.UnlockPanel((int)unlockedMachine - 1);
+        successParticle.Play();
     }
 }

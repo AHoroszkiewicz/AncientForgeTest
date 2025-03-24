@@ -4,31 +4,31 @@ using UnityEngine.UI;
 
 public class Item : MonoBehaviour
 {
+    [SerializeField] private Image itemImage;
+    [SerializeField] private TextMeshProUGUI quantityText;
+    [SerializeField] private ItemSO itemSO;
+
     //Serialized Fields just for testing purposes
-    [SerializeField] private int id;
+    [SerializeField] private ItemsEnum itemEnum;
     [SerializeField] private string itemName;
     [SerializeField] private ItemTypeEnum type;
     [SerializeField] private string description;
     [SerializeField] private int quantity;
 
-    [SerializeField] private Image itemImage;
-    [SerializeField] private TextMeshProUGUI quantityText;
-
-    public int Id => id;
+    public ItemsEnum ItemEnum => itemEnum;
     public string ItemName => itemName;
     public ItemTypeEnum Type => type;
     public string Description => description;
     public int Quantity => quantity;
     public Image ItemImage => itemImage;
 
-    public void Init(int id, string itemName, ItemTypeEnum itemType, string desc, Sprite sprite, int quantity = 0)
+    public void Init()
     {
-        this.id = id;
-        this.itemName = itemName;
-        type = itemType;
-        description = desc;
-        itemImage.sprite = sprite;
-        SetQuantity(quantity);
+        itemName = itemSO.ItemName;
+        type = itemSO.ItemType;
+        description = itemSO.ItemDescription;
+        itemImage.sprite = itemSO.ItemSprite;
+        itemEnum = itemSO.ItemEnum;
     }
 
     public void SetQuantity(int value)

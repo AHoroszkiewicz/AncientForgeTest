@@ -5,6 +5,7 @@ public class Bonus : MonoBehaviour
 {
     [SerializeField] private Image image;
     [SerializeField] private BonusSO bonusSO;
+    [SerializeField] private ParticleSystem particle;
 
     private BonusManager bonusManager;
     private bool isApplied = false;
@@ -20,7 +21,9 @@ public class Bonus : MonoBehaviour
 
     public void ApplyBonus()
     {
+        if (isApplied) return;
         isApplied = true;
         image.color = Color.white;
+        particle.Play();
     }
 }

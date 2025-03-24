@@ -28,7 +28,8 @@ public class BonusManager : MonoBehaviour
     {
         foreach (var bonus in bonuses)
         {
-            bonus.ApplyBonus();
+            if (!bonus.IsApplied)
+                bonus.ApplyBonus();
         }
     }
 

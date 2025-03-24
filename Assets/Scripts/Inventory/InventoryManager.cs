@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    [SerializeField] ItemListSO itemList;
-    [SerializeField] GameObject itemPrefab;
     [SerializeField] private List<Item> items;
     [SerializeField] private float idleResourceTime = 5f;
     [SerializeField] private LoadingSprite loadingSprite;
@@ -22,39 +20,45 @@ public class InventoryManager : MonoBehaviour
 
     private void InitInventory()
     {
-        for (int i = 0; i < itemList.Items.Count; i++)
+        for (int i = 0; i < items.Count; i++)
         {
-            Item item = Instantiate(itemPrefab, transform).GetComponent<Item>();
-            item.transform.SetParent(transform);
-            int id = i + 1; // i+1 so it starts from 1 just like in the design spec
-            item.Init(id, itemList.Items[i].ItemName, itemList.Items[i].ItemType, itemList.Items[i].ItemDescription, itemList.Items[i].ItemSprite);
-            items.Add(item);
-            switch (id)
+            Item item = items[i];
+            item.Init();
+            switch (item.ItemEnum)
             {
-                case (int)ItemsEnum.IronOre:
-                    AddItem(id, Random.Range(3,6));
+                case ItemsEnum.IronOre:
+                    AddItem(Random.Range(3, 6), itemEnum: ItemsEnum.IronOre);
                     break;
-                case (int)ItemsEnum.GoldOre:
-                    AddItem(id, Random.Range(1, 4));
+                case ItemsEnum.GoldOre:
+                    AddItem(Random.Range(1, 4), itemEnum: ItemsEnum.GoldOre);
                     break;
-                case (int)ItemsEnum.FireShard:
-                    AddItem(id, Random.Range(0, 3));
+                case ItemsEnum.FireShard:
+                    AddItem(Random.Range(0, 3), itemEnum: ItemsEnum.FireShard);
                     break;
-                case (int)ItemsEnum.EmberDust:
-                    AddItem(id, Random.Range(0, 3));
+                case ItemsEnum.EmberDust:
+                    AddItem(Random.Range(0, 3), itemEnum: ItemsEnum.EmberDust);
                     break;
-                case (int)ItemsEnum.DragonScale:
-                    AddItem(id, Random.Range(0, 2));
+                case ItemsEnum.DragonScale:
+                    AddItem(Random.Range(0, 2), itemEnum: ItemsEnum.DragonScale);
                     break;
             }
         }
         StartCoroutine(IdleResources());
     }
 
-    public void AddItem(int id, int value)
+    public void AddItem(int value, ItemsEnum itemEnum = ItemsEnum.None, int id = -1)
     {
-        gameManager.CharacterManager.QuestManager.CheckQuests((ItemsEnum)id);
-        items[id - 1].UpdateQuantity(value);
+        gameManager.CharacterManager.QuestManager.CheckQuests(itemEnum);
+        if (id != -1)
+        {
+            items[id - 1].UpdateQuantity(value);
+            return;
+        }
+        else if (itemEnum != ItemsEnum.None)
+        {
+            items[(int)itemEnum - 1].UpdateQuantity(value);
+            return;
+        }
     }
 
     public void RemoveItem(int id, int value)
@@ -69,7 +73,7 @@ public class InventoryManager : MonoBehaviour
             StartCoroutine(loadingSprite.StartLoading(idleResourceTime));
             yield return new WaitForSeconds(idleResourceTime);
             int randomItem = Random.Range(1, 6);
-            AddItem(randomItem, 1);
+            AddItem(1, id: randomItem);
         }
     }
 
@@ -79,7 +83,7 @@ public class InventoryManager : MonoBehaviour
         {
             if (item.Type == ItemTypeEnum.Resource)
             {
-                AddItem(item.Id, 10);
+                AddItem(10, itemEnum: item.ItemEnum);
             }
         }
     }

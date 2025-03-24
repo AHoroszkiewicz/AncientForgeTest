@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 423c5adb35ab75045bd22f46c47cf5f7, type: 3}
   m_Name: FlameGoldIngotSO
   m_EditorClassIdentifier: 
+  itemEnum: 9
   itemName: Flame-Gold Ingot
   itemType: 1
   itemDescription: Advanced alloy forged from Gold Ingot + Fire Shard
