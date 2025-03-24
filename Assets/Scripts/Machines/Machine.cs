@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Machine : MonoBehaviour
 {
     [SerializeField] private float defaultTimeBonus = 0f;
     [SerializeField] private float defaultSuccessBonus = 1f;
+    [SerializeField] private LoadingSprite loadingSprite;
 
     private Queue<Recipe> craftingQueue = new Queue<Recipe>();
     private bool isCrafting = false;
@@ -34,6 +36,7 @@ public class Machine : MonoBehaviour
             float time = recipe.Time - TimeBonus();
             if (time <= 0 ) 
                 time = 0.1f;
+            StartCoroutine(loadingSprite.StartLoading(time));
             yield return new WaitForSeconds(time);
             float random = Random.Range(0f, 1f);
             float success = recipe.SuccessRate * SuccessBonus();

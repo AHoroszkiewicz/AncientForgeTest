@@ -8,6 +8,7 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] GameObject itemPrefab;
     [SerializeField] private List<Item> items;
     [SerializeField] private float idleResourceTime = 5f;
+    [SerializeField] private LoadingSprite loadingSprite;
 
     private GameManager gameManager;
 
@@ -65,6 +66,7 @@ public class InventoryManager : MonoBehaviour
     {
         while (true)
         {
+            StartCoroutine(loadingSprite.StartLoading(idleResourceTime));
             yield return new WaitForSeconds(idleResourceTime);
             int randomItem = Random.Range(1, 6);
             AddItem(randomItem, 1);
