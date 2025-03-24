@@ -54,6 +54,7 @@ public class Machine : MonoBehaviour
             }
             else
             {
+                AudioManager.Instance.PlayFailSound();
                 failureParticle.Play();
             }
         }
