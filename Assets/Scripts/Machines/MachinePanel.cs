@@ -36,6 +36,19 @@ public class MachinePanel : MonoBehaviour
         }
     }
 
+    public void Show()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public void Hide()
+    {
+        noResourcesObj.SetActive(false);
+        if (noResourceCoroutine != null)
+            StopCoroutine(noResourceCoroutine);
+        gameObject.SetActive(false);
+    }
+
     public void SelectCrafting(Recipe recipe)
     {
         selectedRecipe = recipe;

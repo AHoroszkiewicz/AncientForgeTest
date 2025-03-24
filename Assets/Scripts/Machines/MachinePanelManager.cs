@@ -24,11 +24,11 @@ public class MachinePanelManager : MonoBehaviour
         {
             if (i == id)
             {
-                machinePanels[i].gameObject.SetActive(true);
+                machinePanels[i].Show();
             }
             else
             {
-                machinePanels[i].gameObject.SetActive(false);
+                machinePanels[i].Hide();
             }
         }
     }
