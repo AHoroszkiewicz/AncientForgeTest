@@ -10,11 +10,13 @@ public class MachinePanel : MonoBehaviour
     [SerializeField] private List<RecipeSO> recipesSO = new List<RecipeSO>();
     [SerializeField] private Button button;
     [SerializeField] private Machine machine;
+    [SerializeField] private GameObject noResourcesObj;
 
     private List<Recipe> recipes = new List<Recipe>();
     private Recipe selectedRecipe;
     private InventoryManager inventoryManager;
     private MachinePanelManager machinePanelManager;
+    private Coroutine noResourceCoroutine;
 
     public MachinePanelManager MachinePanelManager => machinePanelManager;
 
@@ -67,7 +69,7 @@ public class MachinePanel : MonoBehaviour
         }
         if (!success)
         {
-            Debug.Log("Not enough resources"); //TODO
+            noResourceCoroutine = StartCoroutine(NoResources());
             return;
         }
         foreach (var item in inputs)
@@ -80,5 +82,16 @@ public class MachinePanel : MonoBehaviour
     public void Unlock()
     {
         button.interactable = true;
+    }
+
+    private IEnumerator NoResources()
+    {
+        if (noResourceCoroutine != null)
+        {
+            StopCoroutine(noResourceCoroutine);
+        }
+        noResourcesObj.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        noResourcesObj.SetActive(false);
     }
 }
